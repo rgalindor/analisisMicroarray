@@ -1,0 +1,1 @@
+system('mkdir chocho');system('ls | grep "txt" > chocho/eleese.txt');open(LIST, "./chocho/eleese.txt")or die "chanchanchan\n";@lst=<LIST>;close(LIST);foreach $ar(@lst){	chomp($ar);	$instr="cat ".$ar." | grep -v ARA > chocho/".$ar;	print"$instr\n";	system($instr);}system('rm chocho/eleese.txt');#quitador de ARAs del output del microarreglo

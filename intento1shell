@@ -1,0 +1,2 @@
+agrupar todos los txt en la carpeta actualprimero el genAriseRobCARPET.Rluego el filtradorIDs.plluego el buscadorRelacional.plluego el dendroFactories.Rmkdir $1cd $1genAriseRobCARPET.Rperl filtradorIDs.pl *pfor $fichero in *GOOD*;doperl buscadorRelacional.pl $fichero $2donels | grep -v READY | rmdendroFactories.R
+
